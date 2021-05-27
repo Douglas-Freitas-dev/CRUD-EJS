@@ -1,0 +1,24 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+    <h1>Excluir Produto</h1>
+    <div class="row">
+        <table class="table table-hover text-center">
+            <tr>
+                <th><h2>ID</h2></th>
+                <th><h2>Desc</h2></th>
+                <th><h2>Qtde</h2></th>
+                <th><h2>Vlr</h2></th>
+                <th><h2>Remover</h2></th>
+            </tr>
+            <%for (p of produtos) {%>
+            <tr>
+                <td><a><%=p.codigo%></a></td>
+                <td><a><%=p.descricao%></a></td>
+                <td><a><%=p.quantidade%></a></td>
+                <td><a><%=p.preco%></a></td>
+                <td><a href="/apaga/<%=produtos.indexOf(p)%>"><img src="img/botaox.jpg" alt=""></a></td>
+            </tr>
+            <%}%>
+        </table>
+    </div>
+</div>

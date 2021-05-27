@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto EJS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">      
+        <link rel="stylesheet" type="text/css" href="/public/css/estilos.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="/">Principal</a>
+                    <a class="navbar-brand" href="/produtos">Produtos</a>
+                    <a class="navbar-brand" href="/sobre">Sobre</a>
+                    <a class="navbar-brand" href="/cadastro">Cadastro</a>
+                    <a class="navbar-brand" href="/remove">Remoção</a>
+                    <a class="navbar-brand" href="/alterar">Alteração</a>
+                </div>
+            </nav>
+                
+        </header>
+
+        <main>
+            <div class="container">
+                <%- body %>
+            </div>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>

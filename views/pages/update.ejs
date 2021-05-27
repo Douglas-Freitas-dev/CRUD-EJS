@@ -1,0 +1,36 @@
+
+<%- contentFor('body') %>
+<br></br>
+<h1 class="text-center">Alteração de Produtos</h1>
+<form action="/update/<%= indice%>" method="POST">
+<div class="jumbotron form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Código</label>
+    <div class="col-sm-10">
+      <input type="text" value="<%= nota.codigo%>" name="codigo" class="form-control form-control-lg" id="codigo" placeholder="Digite aqui...">
+      <br></br>
+    </div>
+
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Descrição</label>
+    <div class="col-sm-10">
+      <input type="text" value="<%= nota.descricao%>" name="descricao" class="form-control form-control-lg" id="descricao" placeholder="Digite aqui...">
+      <br></br>
+    </div>
+
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Quantidade</label>
+    <div class="col-sm-10">
+      <input type="text" value="<%= nota.quantidade%>" name="quantidade" class="form-control form-control-lg" id="quantidade" placeholder="Digite aqui...">
+      <br></br>
+    </div>
+
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Preço</label>
+    <div class="col-sm-10">
+      <input type="text" value="<%= nota.preco%>" name="preco" class="form-control form-control-lg" id="preco" placeholder="Digite aqui...">
+      <br></br>
+    </div>
+
+    <div class="text-left">
+    <button type="submit" class="btn btn-primary btn-lg">Concluir</button>
+    </div>
+
+  </div>
+</form>
